@@ -2,7 +2,7 @@
 
 Jeu de données sur la situation alimentaire dans les Suds en 2017 et son évolution depuis 1992<br>
 
-Données issues du rapport de l'<i>International Food Policy Research Institute</i> <i>2017 global hunger index: The inequalities of hunger</i> (2017) consulté en octobre 2017</br>
+Données issues du rapport de l'<i>International Food Policy Research Institute</i> intitulé <i>2017 global hunger index: The inequalities of hunger</i> (2017) consulté en octobre 2017</br>
 URL : https://www.ifpri.org/publication/2017-global-hunger-index-inequalities-hunger<br>
 
 Description des principales variables de la couche Monde_GHI_1992-2017.shp :<br>
