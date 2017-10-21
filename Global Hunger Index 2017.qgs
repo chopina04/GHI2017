@@ -7,25 +7,25 @@
     <customproperties/>
     <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Evolution du Global Hunger Index entre 2000 et 2017">
       <customproperties/>
-      <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="Monde_GHI_1992_201720171021102213090" source="/media/chopina04/STORE N GO/GHI_2017/Monde_GHI_1992-2017.shp" name="Evolution du Global Hunger Index entre 2000 et 2017 (en pourcentage)">
+      <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="Monde_GHI_1992_201720171021102213090" source="/home/chopina04/SIG_data/Seconde/Global Hunger Index 2017/Monde_GHI_1992-2017.shp" name="Evolution du Global Hunger Index entre 2000 et 2017 (en pourcentage)">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Monde_GHI_1992_201720171021113149805" source="/media/chopina04/STORE N GO/GHI_2017/Monde_GHI_1992-2017.shp|layerid=0|subset=&quot;GHI2000&quot; = 0" name="Absence de données">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Monde_GHI_1992_201720171021113149805" source="/home/chopina04/SIG_data/Seconde/Global Hunger Index 2017/Monde_GHI_1992-2017.shp|layerid=0|subset=&quot;GHI2000&quot; = 0" name="Absence de données">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Global Hunger Index en 2017">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Monde_GHI_1992_201720171018220823262" source="/media/chopina04/STORE N GO/GHI_2017/Monde_GHI_1992-2017.shp" name="Global Hunger Index 2017">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Monde_GHI_1992_201720171018220823262" source="/home/chopina04/SIG_data/Seconde/Global Hunger Index 2017/Monde_GHI_1992-2017.shp" name="Global Hunger Index 2017">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
     <layer-tree-group expanded="0" checked="Qt::Checked" name="Fonds de carte">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Monde_Territoires_hors_Etude_GHI_201720171019190251112" source="/media/chopina04/STORE N GO/GHI_2017/Monde_Territoires_hors_Etude_GHI_2017.shp" name="Etats et territoires hors du périmètre de l'étude">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Monde_Territoires_hors_Etude_GHI_201720171019190251112" source="/home/chopina04/SIG_data/Seconde/Global Hunger Index 2017/Monde_Territoires_hors_Etude_GHI_2017.shp" name="Etats et territoires hors du périmètre de l'étude">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Monde_GHI_1992_201720171019185613857" source="/media/chopina04/STORE N GO/GHI_2017/Monde_GHI_1992-2017.shp" name="Monde">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Monde_GHI_1992_201720171019185613857" source="/home/chopina04/SIG_data/Seconde/Global Hunger Index 2017/Monde_GHI_1992-2017.shp" name="Monde">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -58,8 +58,8 @@
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="1">
-      <item>Monde_GHI_1992_201720171021113149805</item>
       <item>Monde_GHI_1992_201720171021102213090</item>
+      <item>Monde_GHI_1992_201720171021113149805</item>
       <item>Monde_GHI_1992_201720171018220823262</item>
       <item>Monde_Territoires_hors_Etude_GHI_201720171019190251112</item>
       <item>Monde_GHI_1992_201720171019185613857</item>
@@ -67,12 +67,12 @@
   </layer-tree-canvas>
   <legend updateDrawingOrder="false">
     <legendgroup open="false" checked="Qt::Unchecked" name="Evolution du Global Hunger Index entre 2000 et 2017">
-      <legendlayer drawingOrder="1" open="false" checked="Qt::Unchecked" name="Evolution du Global Hunger Index entre 2000 et 2017 (en pourcentage)" showFeatureCount="0">
+      <legendlayer drawingOrder="0" open="false" checked="Qt::Unchecked" name="Evolution du Global Hunger Index entre 2000 et 2017 (en pourcentage)" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="Monde_GHI_1992_201720171021102213090" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="0" open="true" checked="Qt::Unchecked" name="Absence de données" showFeatureCount="0">
+      <legendlayer drawingOrder="1" open="true" checked="Qt::Unchecked" name="Absence de données" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="Monde_GHI_1992_201720171021113149805" visible="0"/>
         </filegroup>
@@ -988,12 +988,12 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 attr="CASE WHEN  &quot;GHI2000&quot;  >  0  THEN (  &quot;GHI2017&quot;  -  &quot;GHI2000&quot;  )  /  &quot;GHI2017&quot; END&#xa;&#xa;" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
+      <renderer-v2 attr="CASE WHEN  &quot;GHI2000&quot;  >  0  THEN ((  &quot;GHI2017&quot;  -  &quot;GHI2000&quot;  )  /  &quot;GHI2000&quot;)*100 END&#xa;&#xa;" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedColor" enableorderby="0">
         <ranges>
-          <range render="true" symbol="0" lower="-1.864583333333333" upper="-1.106666666666667" label=" -1.86 - -1.11 "/>
-          <range render="true" symbol="1" lower="-1.106666666666667" upper="-0.632653061224490" label=" -1.11 - -0.63 "/>
-          <range render="true" symbol="2" lower="-0.632653061224490" upper="-0.323671497584541" label=" -0.63 - -0.32 "/>
-          <range render="true" symbol="3" lower="-0.323671497584541" upper="0.000000000000000" label=" -0.32 - 0.00 "/>
+          <range render="true" symbol="0" lower="-65.090909090909093" upper="-48.165137614678898" label=" -65 - -48 "/>
+          <range render="true" symbol="1" lower="-48.165137614678898" upper="-36.363636363636360" label=" -48 - -36 "/>
+          <range render="true" symbol="2" lower="-36.363636363636360" upper="-21.985815602836880" label=" -36 - -22 "/>
+          <range render="true" symbol="3" lower="-21.985815602836880" upper="0.000000000000000" label=" -22 - 0 "/>
         </ranges>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
@@ -1044,7 +1044,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="3">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="208,243,251,255"/>
+              <prop k="color" v="220,245,251,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -1084,7 +1084,7 @@ def my_form_open(dialog, layer, feature):
         <mode name="jenks"/>
         <rotation/>
         <sizescale scalemethod="diameter"/>
-        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="2"/>
+        <labelformat format=" %1 - %2 " trimtrailingzeroes="false" decimalplaces="0"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -1258,6 +1258,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -1283,7 +1284,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="CNTR_ID" index="0" name=""/>
         <alias field="SHAPE_AREA" index="1" name=""/>
@@ -1312,10 +1313,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -1621,6 +1622,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -1646,7 +1648,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="CNTR_ID" index="0" name=""/>
         <alias field="SHAPE_AREA" index="1" name=""/>
@@ -1661,7 +1663,7 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="49520896">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="CNTR_ID"/>
           <column width="-1" hidden="0" type="field" name="SHAPE_AREA"/>
@@ -1675,10 +1677,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
